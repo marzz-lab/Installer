@@ -1,5 +1,6 @@
 # Installer
 
+#Bash
 ```Bash
 p
 ```
