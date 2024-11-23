@@ -1,6 +1,6 @@
 # Installer
 
-#Bash
+# Bash
 ```Bash
 p
 ```
