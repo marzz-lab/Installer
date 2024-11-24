@@ -425,6 +425,11 @@ sudo systemctl start wings
   clear
   exit 0
 }
+
+install_pterodactyl() {
+bash <(curl -s https://pterodactyl-installer.se)
+}
+
 hackback_panel() {
   echo -e "                                                       "
   echo -e "${BLUE}[+] ========================================== [+]${NC}"
@@ -492,11 +497,12 @@ while true; do
   echo -e "BERIKUT LIST INSTALL :"
   echo "1. Install theme"
   echo "2. Uninstall theme"
-  echo "3. Create Node"
-  echo "4. Configure Wings"
-  echo "5. Uninstall Panel"
-  echo "6. Hack Back Panel"
-  echo "7. Ubah Pw Vps"
+  echo "3. Install Pterodactyl"
+  echo "4. Create Node"
+  echo "5. Configure Wings"
+  echo "6. Uninstall Panel"
+  echo "7. Hack Back Panel"
+  echo "8. Ubah Pw Vps"
   echo "x. Exit"
   echo -e "Masukkan pilihan 1/2/x:"
   read -r MENU_CHOICE
@@ -510,18 +516,21 @@ while true; do
       uninstall_theme
       ;;
       3)
-      create_node
+      install_pterodactyl
       ;;
       4)
-      configure_wings
+      create_node
       ;;
       5)
-      uninstall_panel
+      configure_wings
       ;;
       6)
-      hackback_panel
+      uninstall_panel
       ;;
       7)
+      hackback_panel
+      ;;
+      8)
       ubahpw_vps
       ;;
     x)
