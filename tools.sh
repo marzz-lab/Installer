@@ -71,10 +71,6 @@ select_display() {
         xdg-open "https://wa.me/6285960349812"
       fi
       ;;
-    2)
-    bash <(curl -s https://pterodactyl-installer.se) <<EOF
-6
-EOF
     x)
       clear
       exit 0
