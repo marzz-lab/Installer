@@ -492,8 +492,8 @@ while true; do
   echo -e "BERIKUT LIST INSTALL :"
   echo "1. Install theme"
   echo "2. Uninstall theme"
-  echo "3. Configure Wings"
-  echo "4. Create Node"
+  echo "3. Create Node"
+  echo "4. Configure Wings"
   echo "5. Uninstall Panel"
   echo "6. Hack Back Panel"
   echo "7. Ubah Pw Vps"
@@ -510,10 +510,10 @@ while true; do
       uninstall_theme
       ;;
       3)
-      configure_wings
+      create_node
       ;;
       4)
-      create_node
+      configure_wings
       ;;
       5)
       uninstall_panel
